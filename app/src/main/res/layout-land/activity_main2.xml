@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hola Mundo"
+                android:gravity="center"
+                android:background="@android:color/holo_red_light"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opcion1" />
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opcion2"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Opcion1" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Opcion2" />
+
+            </RadioGroup>
+           <Button
+               android:id="@+id/boton1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Boton Clase anonima"
+               android:background="@color/black"
+               android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/boton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boton implements"
+                android:background="#ffffff"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boton onclick"
+                android:background="@color/teal_700"
+                android:onClick="boton3"/>
+
+            <ToggleButton
+                android:id="@+id/tbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOn="Activo"
+                android:textOff="Inactivo"
+                android:onClick="Estado"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                />
+
+            <Switch
+                android:id="@+id/switc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion"
+                android:layout_marginBottom="20dp"
+                android:onClick="botonSwitch"/>
+
+            <TextView
+                android:id="@+id/estadoSwit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:layout_marginBottom="20dp"
+                android:onClick="siguiente"/>
+
+            <TextView
+                android:id="@+id/nombremensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Mensaje"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/telmensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefono: "
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regresar"
+                android:background="@color/teal_700"
+                android:onClick="regresar"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
